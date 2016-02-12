@@ -1,0 +1,40 @@
+﻿@using ShapeShifters.UI.ViewModels
+@{
+    ViewBag.Title = "Hotel List";
+}
+
+<div class="page-header">
+    <h1>Hotel List </h1>
+</div>
+
+<p class="lead"><h3> Hotels in <code>@Model.SelectedCountry</code> </h3></p>
+<div class="panel panel-default" style="border:0px" >
+           
+    <div class="table-responsive" style="overflow-x:hidden">
+     
+            @foreach (var hotel in Model.Data)
+            {
+                <div class="row">
+                <div class="col-xs-2 ">
+                    <div class="thumbnail" style="border:0px">
+                        <img src="http://placehold.it/100x100/EEE">
+                       
+                    </div>
+                </div>
+                    <div class="col-xs-8 hoverDiv">
+                        <div class="caption">
+                            <h4>@hotel.Name</h4>
+                            <p>@hotel.AddressLine1</p>
+                            <p>Url: <a href="@hotel.WebUrl" target="_blank">@hotel.WebUrl</a></p>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="col-xs-offset-2"></div>
+                    </div>
+                    <hr />
+            }
+     
+</div>
+
+ </div>

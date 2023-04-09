@@ -4,14 +4,14 @@
 	"parameters": {
         "location": {
             "type": "string",
-            "defaultValue": "Canada Central",
+            "defaultValue": "uksouth",
             "metadata": {
               "description": "Location for all resources."
             }
           },
           "keyVaultName": {
             "type": "string",
-            "defaultValue": "rkkv",
+            "defaultValue": "mmkv",
             "metadata": {
               "description": "Specifies the name of the key vault."
             }
